@@ -6,7 +6,8 @@ build:
   - docker build -t rams24/myrepo:selenium .
 	  
  post_ci:
-  - docker push rams24/myrepo:selenium
+  - chmod +x push.sh
+  - ./push.sh  
 	  
  integrations:
    hub: 
