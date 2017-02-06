@@ -2,10 +2,10 @@ language: none
 
 build: 
 	ci:
-	  - sudo docker build -t rams24/selenium .
+	  - docker build -t rams24/selenium .
 	  
 	post_ci:
-	  - sudo docker push rams24/selenium
+	  - docker push rams24/selenium
 	  
 	integrations:
 	  - integrationName: shippable-docker
