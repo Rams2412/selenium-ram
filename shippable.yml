@@ -11,4 +11,4 @@ build:
  integrations:
      hub: 
        - integrationName: shippable-docker
-         type: docker
+         type: Docker
