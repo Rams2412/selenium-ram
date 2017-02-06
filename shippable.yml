@@ -9,7 +9,8 @@ build:
   - chmod +x push.sh
   - ./push.sh  
 	  
- integrations:
-   hub: 
-     - integrationName: shippable-docker
-       type: Docker
+integrations:                               #required only for private images
+  hub:
+    - integrationName: shippable-docker    
+      type: docker                        
+      
