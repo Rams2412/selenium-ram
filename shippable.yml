@@ -9,6 +9,6 @@ build:
   - docker push rams24/myrepo:selenium
 	  
  integrations:
-   hub: 
-     - integrationName: shippable-docker
-       type: docker
+     hub: 
+       - integrationName: shippable-docker
+         type: docker
