@@ -1,12 +1,14 @@
 language: none
 
 build: 
-	ci:
-	  - docker build -t rams24/myrepo:selenium .
+ ci:
+  - echo 'CI Running'
+  - docker build -t rams24/myrepo:selenium .
 	  
-	post_ci:
-	  - docker push rams24/myrepo:selenium
+ post_ci:
+  - docker push rams24/myrepo:selenium
 	  
-	integrations:
-	  - integrationName: shippable-docker
-	    type: hub
+ integrations:
+   hub: 
+     - integrationName: shippable-docker
+       type: docker
